@@ -69,6 +69,7 @@ keys = [
 
     Key([mod, "shift"], "q", lazy.window.kill()),
     Key([mod, "shift"], "r", lazy.restart()),
+    Key([mod, "shift"], "p", lazy.shutdown()),
 
 
 # QTILE LAYOUT KEYS
@@ -227,9 +228,9 @@ for i in groups:
 
 
 def init_layout_theme():
-    return {"margin":5,
+    return {"margin":2,
             "border_width":2,
-            "border_focus": "#5e81ac",
+            "border_focus": "#bd93f9",
             "border_normal": "#4c566a"
             }
 
@@ -237,8 +238,8 @@ layout_theme = init_layout_theme()
 
 
 layouts = [
-    layout.MonadTall(margin=2, border_width=2, border_focus="#5e81ac", border_normal="#4c566a"),
-    layout.MonadWide(margin=2, border_width=2, border_focus="#5e81ac", border_normal="#4c566a"),
+    layout.MonadTall(margin=2, border_width=2, border_focus="#bd93f9", border_normal="#4c566a"),
+    layout.MonadWide(margin=2, border_width=2, border_focus="#bd93f9", border_normal="#4c566a"),
     layout.Matrix(**layout_theme),
     # layout.Bsp(**layout_theme),
     # layout.Floating(**layout_theme),

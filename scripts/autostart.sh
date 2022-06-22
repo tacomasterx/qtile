@@ -31,7 +31,7 @@ fi
 run dex $HOME/.config/autostart/arcolinux-welcome-app.desktop &
 
 #Some ways to set your wallpaper besides variety or nitrogen
-feh --bg-scale /home/kupoman/Documents/Gimp/Ely_sakurajima_bunny01_1920x1080.png &
+feh --bg-scale ~/.config/qtile/wall_ely.png &
 #start the conky to learn the shortcuts
 (conky -c $HOME/.config/qtile/scripts/system-overview) &
 
